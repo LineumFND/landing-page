@@ -41,15 +41,21 @@ export default function Hero() {
 
           {/* Desktop Actions */}
           <div className="hidden sm:flex items-center gap-3">
-            <button className="px-4 py-2 text-sm bg-[#121212] dark:bg-[#ffffff] dark:text-[#414651] text-[#D5D7DA] rounded-2xl border dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/5 transition">
-              Join Lineum Discord
-            </button>
+            <a
+              href="https://t.me/lineum_org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-4 cursor-pointer py-2 text-sm bg-[#121212] dark:bg-[#ffffff] dark:text-[#414651] text-[#D5D7DA] rounded-2xl border dark:border-white/15 hover:bg-black/5 hover:text-black  dark:hover:bg-white/5 transition">
+                Join Lineum Community
+              </button>
+            </a>
             <DarkModeToggle />
           </div>
 
           {/* Mobile Menu Icon */}
           <button
-            className="sm:hidden p-2 rounded-md hover:bg-gray-100  dark:hover:bg-white/10 transition"
+            className="sm:hidden cursor-pointer p-2 rounded-md hover:bg-gray-100 hover:text-black  dark:hover:bg-white/10 transition"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? (
@@ -63,9 +69,15 @@ export default function Hero() {
         {/* Mobile Dropdown */}
         {menuOpen && (
           <div className="sm:hidden flex gap-2 dark:bg-[#121212] px-6 py-4 border-t dark:border-white/10">
-            <button className="w-full mb-3 px-4 py-2 text-sm bg-[#121212] dark:bg-[#121212] text-[#D5D7DA] rounded-2xl border dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/5 transition">
-              Join Lineum Discord
-            </button>
+            <a
+              href="https://t.me/lineum_org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-4 py-2 cursor-pointer text-sm bg-[#121212] dark:bg-[#ffffff] dark:text-[#414651] text-[#D5D7DA] rounded-2xl border dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/5 transition">
+                Join Lineum Community
+              </button>
+            </a>
             <DarkModeToggle />
           </div>
         )}
@@ -95,13 +107,22 @@ export default function Hero() {
               placeholder="Enter your email"
               className="h-11 flex-1 rounded-md border border-none dark:border-white/15 bg-[#E5E5E5] dark:bg-[#4b4a4a] px-4 outline-none"
             />
-            <button className="h-11 mt-2 sm:mt-0 sm:ml-2 px-5 rounded-md whitespace-nowrap bg-[#008891] text-white font-medium">
+            <button
+              onClick={() =>
+                window.open("https://discord.gg/KUEyaUUEAs", "_blank")
+              }
+              className="h-11 mt-2 sm:mt-0 cursor-pointer sm:ml-2 px-5 rounded-md whitespace-nowrap bg-[#008891] text-white font-medium"
+            >
               Join Lineum Studio
             </button>
           </div>
 
           {/* Join DAO button */}
-          <button className="h-11 sm:w-full lg:w-[25%] px-5 rounded-2xl border border-black/10 dark:border-white/15 bg-black text-white dark:bg-[#FFFFFF] dark:text-[black] flex items-center justify-center gap-2 whitespace-nowrap">
+
+          <button
+            onClick={() => window.open("https://t.me/lineum_org", "_blank")}
+            className="h-11 cursor-pointer sm:w-full lg:w-[25%] px-5 rounded-2xl border border-black/10 dark:border-white/15 bg-black text-white dark:bg-[#FFFFFF] dark:text-[black] flex items-center justify-center gap-2 whitespace-nowrap"
+          >
             How It Works <span aria-hidden>→</span>
           </button>
         </div>
