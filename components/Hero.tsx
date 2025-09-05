@@ -125,7 +125,7 @@ export default function Hero() {
 
           <button
             onClick={() => window.open("https://t.me/lineum_org", "_blank")}
-            className="h-11 cursor-pointer sm:w-full lg:w-[25%] px-5 rounded-2xl border border-black/10 dark:border-white/15 bg-black text-white dark:bg-[#FFFFFF] dark:text-[black] flex items-center justify-center gap-2 whitespace-nowrap"
+            className="h-11 cursor-pointer sm:w-full lg:w-[25%] mt-1 px-5 rounded-2xl border border-black/10 dark:border-white/15 bg-black text-white dark:bg-[#FFFFFF] dark:text-[black] flex items-center justify-center gap-2 whitespace-nowrap"
           >
             How It Works <span aria-hidden>→</span>
           </button>
