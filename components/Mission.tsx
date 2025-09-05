@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Mission() {
   return (
     <section className="bg-[#121212] text-[#ffffff] dark:bg-[#242424] px-6 py-20 ">
@@ -18,11 +20,7 @@ export default function Mission() {
         {/* Steps */}
         <div className="mt-12  grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-5 rounded-2xl text-start bg-white dark:bg-[#F2F2F2] shadow">
-            <img
-              src="/assets/mission1.png"
-              alt=""
-              className="w-[60px] h-[60px]"
-            />
+            <Image src="/assets/mission1.png" alt="" width={60} height={60} />
             <h3 className="font-semibold mb-2 text-[#181D27]">
               JOIN THE LINEUM
             </h3>
@@ -33,11 +31,7 @@ export default function Mission() {
           </div>
 
           <div className="p-5 rounded-2xl text-start bg-white dark:bg-[#F2F2F2] shadow">
-            <img
-              src="/assets/mission2.png"
-              alt=""
-              className="w-[60px] h-[60px]"
-            />
+            <Image src="/assets/mission2.png" alt="" width={60} height={60} />
             <h3 className="font-semibold mb-2 text-[#181D27]">GOVERN & PLAN</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Shape the future of design by voting, planning, and building with
@@ -46,11 +40,7 @@ export default function Mission() {
           </div>
 
           <div className="p-5 rounded-2xl text-start bg-white dark:bg-[#F2F2F2] shadow">
-            <img
-              src="/assets/mission3.png"
-              alt=""
-              className="w-[60px] h-[60px]"
-            />
+            <Image src="/assets/mission3.png" alt="" width={60} height={60} />
             <h3 className="font-semibold mb-2 text-[#181D27]">
               LAUNCH THE MARKETPLACE
             </h3>

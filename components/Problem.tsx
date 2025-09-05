@@ -14,7 +14,7 @@ export default function Problem() {
         </h2>
         <p className="mt-4 max-w-md text-[#535862] dark:text-gray-400">
           You create. You sell. You lose control. Your work generates value, but
-          you don't share in it.
+          you don&apos;t share in it.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
@@ -74,7 +74,8 @@ export default function Problem() {
               src="/assets/robot.png"
               alt="DAO robot"
               fill
-              sizes="(max-width: 1024px) 88vw, 560px"
+              priority
+              sizes="(max-width: 768px) 88vw, (max-width: 1024px) 560px, 400px"
               className="object-contain p-0 drop-shadow-[0_20px_80px_rgba(0,0,0,0.35)]"
             />
           </motion.div>

@@ -1,12 +1,17 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-[#121212] text-white py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="border-b border-gray-700 pb-8 sm:pb-12 space-y-6">
-          <img
+          <Image
             src="/assets/lineum-white.png"
             alt="DAO Logo"
-            className="mx-auto h-8 sm:h-10"
+            width={120} // set logo width
+            height={40} // set logo height
+            className="mx-auto"
+            priority
           />
           <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">
             NO TOKENS. NO MIDDLEMEN. JUST SOVEREIGNTY.
@@ -27,10 +32,11 @@ export default function Footer() {
               className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="GitHub"
             >
-              <img
+              <Image
                 src="/assets/github.png"
                 alt="GitHub"
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                width={24}
+                height={24}
               />
             </a>
             <a
@@ -38,21 +44,18 @@ export default function Footer() {
               className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="X (Twitter)"
             >
-              <img
-                src="/assets/x.png"
-                alt="X"
-                className="w-5 h-5 sm:w-6 sm:h-6"
-              />
+              <Image src="/assets/x.png" alt="X" width={24} height={24} />
             </a>
             <a
-              href="#"
+              href="https://discord.gg/KUEyaUUEAs"
               className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Discord"
             >
-              <img
+              <Image
                 src="/assets/discord.png"
                 alt="Discord"
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                width={24}
+                height={24}
               />
             </a>
             <a
@@ -60,10 +63,11 @@ export default function Footer() {
               className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Telegram"
             >
-              <img
+              <Image
                 src="/assets/telegram2.png"
                 alt="Telegram"
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                width={24}
+                height={24}
               />
             </a>
             <a
@@ -71,10 +75,11 @@ export default function Footer() {
               className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Tiktok"
             >
-              <img
-                src="/assets/telegram2.png"
+              <Image
+                src="/assets/telegram2.png" // 🔄 replace with tiktok.png when available
                 alt="Tiktok"
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                width={24}
+                height={24}
               />
             </a>
             <a
@@ -82,10 +87,11 @@ export default function Footer() {
               className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Linkedin"
             >
-              <img
-                src="/assets/telegram2.png"
+              <Image
+                src="/assets/telegram2.png" // 🔄 replace with linkedin.png
                 alt="Linkedin"
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                width={24}
+                height={24}
               />
             </a>
             <a
@@ -93,10 +99,11 @@ export default function Footer() {
               className="text-gray-400 hover:text-white transition-colors p-2"
               aria-label="Reddit"
             >
-              <img
-                src="/assets/telegram2.png"
+              <Image
+                src="/assets/telegram2.png" // 🔄 replace with reddit.png
                 alt="Reddit"
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                width={24}
+                height={24}
               />
             </a>
           </div>

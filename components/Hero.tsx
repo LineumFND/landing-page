@@ -27,15 +27,19 @@ export default function Hero() {
         <div className="relative z-10 flex items-center justify-between max-w-7xl mx-auto px-6 py-5">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img
-              src={
-                theme === "dark"
-                  ? "/assets/lineum-white.png"
-                  : "/assets/lineum-white.png"
-              }
-              alt="LINEUM logo"
-              className="w-5 h-5"
-            />
+            <div className="relative w-5 h-5">
+              <Image
+                src={
+                  theme === "dark"
+                    ? "/assets/lineum-white.png"
+                    : "/assets/lineum-white.png"
+                }
+                alt="LINEUM logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
             <span className="font-semibold tracking-wide">LINEUM</span>
           </div>
 
@@ -101,7 +105,7 @@ export default function Hero() {
         {/* Email + CTAs */}
         <div className="mt-6 flex flex-col lg:flex-row items-stretch lg:justify-center gap-3 max-w-md lg:max-w-4xl lg:mx-auto w-full sm:text-start">
           {/* Email input and button */}
-          <div className="bg-[#E5E5E5] dark:bg-[#4b4a4a] p-1 rounded-2xl flex  lg:flex-row  lg:w-[50%]">
+          <div className="bg-[#E5E5E5] dark:bg-[#4b4a4a] p-1  rounded-2xl flex  lg:flex-row  lg:w-[50%]">
             <input
               type="email"
               placeholder="Enter your email"
@@ -111,7 +115,7 @@ export default function Hero() {
               onClick={() =>
                 window.open("https://discord.gg/KUEyaUUEAs", "_blank")
               }
-              className="h-11 mt-2 sm:mt-0 cursor-pointer sm:ml-2 px-5 rounded-md whitespace-nowrap bg-[#008891] text-white font-medium"
+              className="h-11 mt-2 sm:mt-0 cursor-pointer sm:ml-2 px-2 rounded-md whitespace-nowrap bg-[#008891] text-white font-medium"
             >
               Join Lineum Studio
             </button>
