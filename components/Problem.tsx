@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 export default function Problem() {
   return (
-    <section className="relative lg:px-6 py-20 max-w-7xl mx-[5rem] sm:text-start dark:bg-[#0A0D12] mb-5 sm:p-1">
-      <div>
-        <p className="text-[#008891] sm:text-2xl md:text-2xl text-xs uppercase tracking-[0.22em] font-semibold">
+    <section className="lg:mx-[5rem] lg:my-10  ">
+      <div className="m-5 p-0 sm:m-auto sm:p-auto ">
+        <p className="text-[#008891] sm:text-2xl md:text-2xl  uppercase tracking-[0.22em] font-semibold text-2xl">
           The Gaps We Bridge
         </p>
-        <h2 className="text-xs md:text-2xl font-bold text-[#181D27] mt-2">
+        <h2 className="text-xs md:text-2xl font-bold text-[#181D27] dark:text-white mt-2">
           THE SYSTEM IS BROKEN
         </h2>
         <p className="mt-4 max-w-md text-[#535862] dark:text-gray-400">
@@ -20,14 +20,15 @@ export default function Problem() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Copy + feature cards */}
 
-        <div className="mt-10   ">
-          <h2 className="text-xs md:text-2xl font-bold text-[#494949] mt-2">
+        <div className="mt-10 m-5 lg:m-0 lg:mt-5  ">
+          <h2 className=" md:text-2xl font-bold text-[#494949] mt-2 text-2xl dark:text-white">
             How we Are Changing That
           </h2>
 
-          <div className="mt-10 grid  grid-col-2 lg:grid-cols-2 sm:grid-cols-2 gap-5">
-            <div className="p-6  rounded-2xl glass !bg-[#F9F9F9] dark:!bg-[#242424]">
-              <h3 className="font-semibold text-[#5B5B5B] mb-2">
+          <div className="mt-10 grid lg:mt-[1rem] grid-cols-2 gap-5">
+            {/* NO SPECULATION TOKEN */}
+            <div className="p-6 rounded-2xl glass !bg-[#F9F9F9] dark:!bg-[#242424]">
+              <h3 className="font-semibold text-[#5B5B5B] mb-2 dark:text-white">
                 NO SPECULATION TOKEN
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -36,8 +37,9 @@ export default function Problem() {
               </p>
             </div>
 
-            <div className="p-6  rounded-2xl glass lg:row-span-2  !bg-[#F9F9F9] dark:!bg-[#242424]">
-              <h3 className="font-semibold text-[#5B5B5B] mb-2">
+            {/* REAL-WORLD IMPACT → spans 2 rows only on lg */}
+            <div className="p-6 rounded-2xl glass !bg-[#F9F9F9] dark:!bg-[#242424] lg:row-span-2">
+              <h3 className="font-semibold text-[#5B5B5B] mb-2 dark:text-white">
                 REAL-WORLD <br /> IMPACT
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -46,8 +48,9 @@ export default function Problem() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl glass col-span-2 sm:col-span-2 !bg-[#F9F9F9] dark:!bg-[#242424]">
-              <h3 className="font-semibold text-[#5B5B5B] mb-2">
+            {/* DESIGNER-LED GOVERNANCE → spans 2 cols only on small screens */}
+            <div className="p-6 rounded-2xl glass !bg-[#F9F9F9] dark:!bg-[#242424] col-span-2 lg:col-span-1">
+              <h3 className="font-semibold text-[#5B5B5B] mb-2 dark:text-white">
                 DESIGNER-LED GOVERNANCE
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
