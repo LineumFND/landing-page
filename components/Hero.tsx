@@ -105,19 +105,19 @@ export default function Hero() {
         {/* Email + CTAs */}
         <div className="mt-6 flex flex-col lg:flex-row items-stretch lg:justify-center gap-3 max-w-md lg:max-w-4xl lg:mx-auto w-full sm:text-start">
           {/* Email input and button */}
-          <div className="bg-[#E5E5E5] dark:bg-[#4b4a4a] lg:p-1 px-2 py-1 rounded-2xl flex  lg:flex-row  lg:w-[50%]">
+          <div className="flex w-full lg:w-[50%] rounded-2xl overflow-hidden">
             <input
               type="email"
               placeholder="Enter your email"
-              className="h-11 flex-1 rounded-md border border-none dark:border-white/15 bg-[#E5E5E5] dark:bg-[#4b4a4a] px-4 outline-none"
+              className="h-11 flex-1 px-4 bg-[#E5E5E5] dark:bg-[#4b4a4a] outline-none text-sm"
             />
             <button
               onClick={() =>
                 window.open("https://discord.gg/KUEyaUUEAs", "_blank")
               }
-              className="h-11 mt-2 sm:mt-0 cursor-pointer  px-2 rounded-md whitespace-nowrap bg-[#008891] text-white font-medium"
+              className="h-11 px-4 bg-[#008891] text-white font-medium text-sm"
             >
-              Join Lineum Studio
+              Get Started
             </button>
           </div>
 

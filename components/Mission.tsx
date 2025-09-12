@@ -4,11 +4,11 @@ export default function Mission() {
   return (
     <section className="bg-[#121212] text-[#ffffff] dark:bg-[#242424] lg:px-6 lg:py-20 py-10 mx-0 ">
       <div className="max-w-6xl mx-[1rem] lg:mx-[5rem] text-center ">
-        <div className="w-[50%] text-start  ">
+        <div className="w-[100%] text-start  ">
           <p className="text-teal-400 text-sm uppercase tracking-wider font-semibold">
             Our Mission
           </p>
-          <h2 className="text-2xl lg:text-3xl md:text-3xl font-bold mt-2">
+          <h2 className="text-xl  lg:text-3xl md:text-3xl font-bold mt-2">
             BUILD THE FUTURE, TOGETHER.
           </h2>
           <p className="mt-2  max-w-sm  text-[#DBDBDB] dark:text-gray-400">

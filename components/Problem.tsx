@@ -66,7 +66,7 @@ export default function Problem() {
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 140, damping: 22 }}
           viewport={{ once: true, amount: 0.35 }}
-          className="order-last lg:order-none dark:!bg-[#242424] rounded-3xl p-0"
+          className="order-last lg:order-none dark:!bg-[#242424] rounded-3xl p-0 mb-[5rem]"
         >
           <motion.div
             animate={{ y: [0, -10, 0] }}
@@ -79,7 +79,7 @@ export default function Problem() {
               fill
               priority
               sizes="(max-width: 768px) 88vw, (max-width: 1024px) 560px, 400px"
-              className="object-contain p-0 drop-shadow-[0_20px_80px_rgba(0,0,0,0.35)]"
+              className="object-contain p-0 drop-shadow-[0_20px_80px_rgba(0,0,0,0.35)] "
             />
           </motion.div>
         </motion.div>
